@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background: rgb(0 3 25 /1);
+  overflow-x: hidden;
+  /* padding: 0px 80px; */
+  color: whitesmoke;
+  background-image: url("./assets/bg.png");
+  background-repeat: no-repeat;
+  background-position: cover;
+}
+
+@layer utilities {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-semibold w-full;
+  }
+}
