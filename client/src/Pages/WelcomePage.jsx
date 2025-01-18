@@ -1,6 +1,5 @@
 import React from "react"
 import Login from "../Components/Login"
-import Register from "../Components/Register"
 import { MovingBorderDesign } from "../Components/ui/movingBorder"
 
 const WelcomePage = () => {

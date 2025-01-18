@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 body {
-  background: rgb(0 3 25 /1);
+  /* background: rgb(0 3 25 /1); */
+  background: black;
   overflow-x: hidden;
   /* padding: 0px 80px; */
   color: whitesmoke;
@@ -11,7 +12,10 @@ body {
   background-repeat: no-repeat;
   background-position: cover;
 }
-
+.bgBlur {
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 100;
+}
 @layer utilities {
   .btn {
     @apply px-4 py-2 rounded-lg font-semibold w-full;

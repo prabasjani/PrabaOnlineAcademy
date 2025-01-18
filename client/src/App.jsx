@@ -6,6 +6,9 @@ import HomePage from "./Pages/HomePage"
 import AppContextProvider from "./Context/AppContext"
 import Protected from "./Components/Protected"
 import Register from "./Components/Register"
+import Footer from "./Components/Footer"
+import About from "./Pages/About"
+import Contact from "./Pages/Contact"
 
 const App = () => {
   return (
@@ -19,8 +22,11 @@ const App = () => {
             <Route path="/register" element={<Register />} />
             <Route element={<Protected />}>
               <Route path="/" element={<HomePage />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
             </Route>
           </Routes>
+          <Footer />
         </Router>
       </AppContextProvider>
     </div>
